@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <main>
+    <!-- Error container -->
+    <section class="row error-message-container">
+      <span id="js-error-message"></span>
+    </section>
+
+
+    <!-- start page -->
+    <section class="main-buttons">
+      <div class="main-btn add-new js-add-new"><button class="new-text">Add Bookmark</button></div>
+      <div class="filter-btn">
+        <select name="rating" id="rating-filter">
+          <option value="0">Filter By</option>
+          <option ${store.filter===5 ? 'selected' : '' } value="5"></option>
+          <option ${store.filter===4 ? 'selected' : '' } value="4"></option>
+          <option ${store.filter===3 ? 'selected' : '' } value="3"></option>
+          <option ${store.filter===2 ? 'selected' : '' } value="2"></option>
+          <option ${store.filter===1 ? 'selected' : '' } value="1"></option>
+        </select>
+      </div>
+    </section>
+    
+    <div class="main-section hidden">
+      <div class="button-rating">
+        <a class="visit-site" target="_blank" href="${bookmark.url}">Visit Site</a>
+        <p>Rating: ${rating} &hearts;s</p>
+      </div>
+      <p class="bookmark-desc">
+        ${bookmark.desc}
+      </p>
+    </div>
+
+    <!-- bookmark list element -->
+    <li class="js-bookmark-element" data-item-id="${bookmark.id}">
+      <div class="title-section">
+        <h2>${bookmark.title}</h2>
+        <div class="bar-icon">${icon}</div>
+      </div>
+      ${expandedSection}
+    </li>
+      
+    <!-- Form container -->
+    <form class="add-new-form" method="POST">
+      <legend>Add New Bookmark</legend>
+      <div class="field">
+        <label for="add-url">Link: <span class="required-span"><em>Required</em></span></label>
+        <input required placeholder="Begin with 'https://'" id="add-url" type="url">
+      </div>
+    
+      <div class="field">
+        <label for="add-title">Title: <span class="required-span"><em>Required</em></span></label>
+        <input required placeholder="Title" id="add-title" type="text">
+      </div>
+    
+      <div class="field">
+        <label for="add-desc">Description:</label>
+        <textarea name="add-desc" id="add-desc" cols="30" rows="10" placeholder="Add Description (optional)"></textarea>
+      </div>
+    
+      <div class="field">
+        <label for="add-rating">Add a Rating:</label>
+        <select name="add-rating" id="add-rating">
+          <option value="none">Rating</option>
+          <option value="5"></option>
+          <option value="4"></option>
+          <option value="3"></option>
+          <option value="2"></option>
+          <option value="1"></option>
+        </select>
+      </div>
+    
+      <div class="form-buttons">
+        <button class="btn cancel-btn js-cancel-btn">Cancel</button>
+        <button class="btn submit-btn" type="submit">Add Bookmark</button>
+      </div>
+    </form>
+    
+  </main>
+</body>
+</html>

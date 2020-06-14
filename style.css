@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.visit-site {
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 50px;
+}
+
+.main-buttons {
+  display: flex;
+  margin: 20px 0;
+}
+
+button {
+  width: 162px;
+  height: 32px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 4px;
+  border-color: #999;
+}
+
+select {
+  background-color: #fff;
+  width: 162px;
+  height: 32px;
+  padding: 4px;
+  line-height: 32px;
+  text-indent: 4px;
+  cursor: pointer;
+}
+
+legend {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+form label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+form input, form textarea {
+  background-color: #f0f0f0;
+  width: 35%;
+  font-family: inherit;
+  border: none;
+  height: 50px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+form textarea {
+  min-height: 100px;
+  max-height: 180px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.required-span {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.form-buttons {
+  margin-top: 20px;
+}
+
+.trash-can {
+  cursor: pointer;
+}
+
+@media all and (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+}
