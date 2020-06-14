@@ -32,3 +32,6 @@ A client-side Bookmarking application that utilizes a RESTful Web API on the bac
 
 * Thinkful JSON API: 
 [Bookmarks API](https://thinkful-list-api.herokuapp.com/endpoints/bookmarks)
+
+## Screenshot
+![Bookmarks App Screenshot](https://github.com/thinkful-ei-panda/michellej-bookmarks-app/blob/master/screenshot.png)
