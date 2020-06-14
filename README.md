@@ -28,7 +28,6 @@ A client-side Bookmarking application that utilizes a RESTful Web API on the bac
 
 * ~(Extension feature - optional) I can edit the rating and description of a bookmark in my list~
 
-
 ## Acknowledgments
 
 * Thinkful JSON API: 
